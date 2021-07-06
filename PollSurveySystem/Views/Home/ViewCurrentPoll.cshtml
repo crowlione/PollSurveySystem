@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = Model.Question;
+}
+
+@model PollSurveySystem.Models.ViewModels.PollDetailsViewModel
+
+
+<div class="single-poll-card">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@Model.PollID. @Model.Question</h5>
+            <form asp-controller="Polls" asp-action="SubmitVote" method="get">
+                <input asp-for="PollID" class="form-check-input" value="@Model.PollID" type="hidden">
+                @foreach (var o in Model.PollOption)
+                {
+                    <div class="form-group form-check">
+                        <input asp-for="PollOption" class="form-check-input" type="radio" value="@o.PollOptionID">
+                        <label class="form-check-label" asp-for="PollOption">
+                            @o.OptionValue
+                        </label>
+                    </div>
+                }
+            <div class="poll-control-button">
+                <button asp-controller="Polls" asp-action="SubmitVote" class="btn btn-light">Vote</button>
+                <button asp-controller="Polls" asp-action="SubmitVote" class="btn btn-light">View Results</button>
+            </div>
+            </form>
+            @*<div class="view-results-button">
+            <button class="btn btn-light btn-lg">@Html.ActionLink("View Results", "SubmitVote", "Polls", new { PollID = Model.PollID }) </button>
+            </div>*@
+        </div>
+    </div>
+</div>
+
+
+

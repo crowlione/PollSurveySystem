@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="index-page-text">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to the world's largest poll survey system!</h1>
+        <p>
+            There is a question that really bothers you?<br />
+            You want to show your friend that you're right and they're wrong?<br />
+            Ask our worldwide community of poll takers and receive honest opinion on various topics!
+        </p>
+    </div>
+</div>
+<div class="get-started-button">
+    <button class="btn btn-outline-dark btn-lg">@Html.ActionLink("Get Started", "GetActivePolls")</button>
+</div>
+<div class="week-quote">
+    <div class="card">
+        <div class="card-header">
+            Quote of the Week
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>
+                    A telephone survey says that 51 percent of college students drink until they pass out at least once a month.
+                    The other 49 percent didn't answer the phone.
+                </p>
+                <footer class="blockquote-footer">Craig Kilborn in <cite title="https://www.azquotes.com/">www.azquotes.com</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+

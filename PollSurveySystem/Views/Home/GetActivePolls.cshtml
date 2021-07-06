@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Active Polls";
+}
+
+@model IEnumerable<PollSurveySystem.Models.ViewModels.AllPollsViewModel>
+
+
+<div class="polls-grid-container">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="min-height: 13rem;">
+            <div class="card-body">
+                <h5 class="card-title">@item.PollID. @item.Question</h5>
+                <div class="get-started-button">
+                    <button class="btn btn-light btn-lg">@Html.ActionLink("Vote", "ViewCurrentPoll", new { id = item.PollID }) </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

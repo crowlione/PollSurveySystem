@@ -1,0 +1,90 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-body-wrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+}
+
+.footer-push, footer {
+    height: 50px;
+}
+
+.index-page-text {
+    padding-top: 15vh;
+}
+
+.index-page-text p{
+    padding-top: 2vh;
+}
+
+.view-results-button a {
+    color: #212529;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.view-results-button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.get-started-button {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-button a {
+    color: #212529;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.get-started-button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.poll-control-button {
+    padding: 2vh 0;
+}
+
+.week-quote {
+    padding-top: 7vh;
+}
+
+.add-poll-flex-container {
+    padding-top: 15vh;
+}
+
+svg {
+    margin-right: 10px;
+}
+
+.polls-grid-container {
+    padding: 5vh 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+}
+
+.single-poll-card {
+    padding: 8vh 0;
+}
+
+.single-poll-card h5 {
+    padding-bottom: 3vh;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; 
+}
+
